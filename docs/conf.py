@@ -48,7 +48,7 @@ master_doc = 'index'
 # General information about the project.
 project = 'API for IoT Module'
 copyright = "2020, Cheslyn Williams and Petersen Phihlela"
-author = "Cheslyn Williams"
+author = "Cheslyn Williams and Petersen Phihlela"
 
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
