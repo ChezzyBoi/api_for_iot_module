@@ -22,6 +22,12 @@ API for IoT Module contains functions to be used for implementing a API for a ca
 * Free software: MIT license
 * Documentation: https://api-for-iot-module.readthedocs.io.
 
+Run
+----
+Start virtual environment
+python3 -m venv venv
+. venv/bin/activate
+export FLASK_APP=app.py
 
 Features
 --------
