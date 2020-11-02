@@ -43,7 +43,7 @@ setup(
     include_package_data=True,
     keywords='api_for_iot_module',
     name='api_for_iot_module',
-    packages=find_packages(include=['api_for_iot_module', 'api_for_iot_module.*']),
+    packages=find_packages(),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
