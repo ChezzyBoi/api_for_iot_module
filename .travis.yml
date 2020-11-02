@@ -4,7 +4,6 @@ python:
 - 3.7
 - 3.6
 - 3.5
-before_install: pip install fake_rpi
 install: pip install -U tox-travis
 script: tox
 deploy:
