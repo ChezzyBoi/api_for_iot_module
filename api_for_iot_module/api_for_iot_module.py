@@ -1,12 +1,13 @@
 """Main module."""
 
+from __future__ import division
+
 import sys
 import fake_rpi
 
 sys.modules['RPi'] = fake_rpi.RPi     
 sys.modules['picamera'] = fake_rpi.picamera
 
-from __future__ import division
 import io
 import json
 import picamera
