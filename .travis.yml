@@ -6,8 +6,8 @@ python:
 - 3.5
 before_install: pip install -U pip
 install: 
-- pip install picamera
 - pip install -U tox-travis
+- pip install picamera
 script: tox
 deploy:
   provider: pypi
