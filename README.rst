@@ -46,11 +46,6 @@ The API has methods to change various camera settings, which include the followi
 
 The API also have a motion detection function, where it compares the data of successive frames in the form of a numpy array and gives a alert when there are signficant changes between frames. 
 
-Issues
--------
-
-There is currently some issues we are facing with the travis builds that we hope to fix in the near future
-
 Credits
 -------
 
