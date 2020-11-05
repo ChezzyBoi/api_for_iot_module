@@ -36,13 +36,13 @@ Features
 The API has features to capture both video and still images from the raspberry pi camera and makes use of picamera methods to do so. The way that this API formats its data is by sending non-image data in the form of JSON objects, while image and video frames are send as JPEG binary objects. 
 
 The API has methods to change various camera settings, which include the following:
- * Frame rate.
- * Brightness. 
- * Contrast.
- * Saturatioin. 
- * Sharpness.
- * Exposure mode.
- * Image effect (such as denoise, negative, cartoon and many other effects).
+ * Frame rate
+ * Brightness 
+ * Contrast
+ * Saturatioin 
+ * Sharpness
+ * Exposure mode
+ * Image effect (such as denoise, negative, cartoon and many other effects)
 
 The API also have a motion detection function, where it compares the data of successive frames in the form of a numpy array and gives a alert when there are signficant changes between frames. 
 
