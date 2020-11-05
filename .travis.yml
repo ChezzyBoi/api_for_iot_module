@@ -4,8 +4,20 @@ python:
 - 3.7
 - 3.6
 - 3.5
+
+sudo: required
+services:
+  - docker
+env:
+  - DOCKER_IMAGE=mphareng/picamera
+script:
+  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+  - docker run --rm --privileged multiarch/qemu-user-static:register --reset
+  - docker build -t "$DOCKER_IMAGE" .
+  - docker push "$DOCKER_IMAGE
+  - tox
+
 install: pip install -U tox-travis
-script: tox
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
