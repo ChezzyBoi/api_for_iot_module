@@ -5,6 +5,8 @@ python:
 - 3.6
 - 3.5
 
+install: pip install -U tox-travis
+
 sudo: required
 services:
   - docker
@@ -13,9 +15,8 @@ script:
   - docker run --rm --privileged multiarch/qemu-user-static:register --reset
   - docker build -t mphareng/picamera .
   - docker push mphareng/picamera
-  # - tox
+  - tox
   
-install: pip install -U tox-travis
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
