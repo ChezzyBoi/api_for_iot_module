@@ -13,7 +13,7 @@ script:
   - docker run --rm --privileged multiarch/qemu-user-static:register --reset
   - docker build -t mphareng/picamera .
   - docker push mphareng/picamera
-  - tox
+  # - tox
   
 install: pip install -U tox-travis
 deploy:
