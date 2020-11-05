@@ -11,12 +11,12 @@ services:
 env:
   - DOCKER_IMAGE=mphareng/picamera
 script:
-  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+  - docker login -u mphareng -p @Kryptonite21
   - docker run --rm --privileged multiarch/qemu-user-static:register --reset
   - docker build -t "$DOCKER_IMAGE" .
   - docker push "$DOCKER_IMAGE
   - tox
-
+  
 install: pip install -U tox-travis
 deploy:
   provider: pypi
