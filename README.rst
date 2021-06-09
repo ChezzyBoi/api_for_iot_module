@@ -46,6 +46,11 @@ The API has methods to change various camera settings, which include the followi
 
 The API also have a motion detection function, where it compares the data of successive frames in the form of a numpy array and gives a alert when there are signficant changes between frames. 
 
+API Demonstration
+-----------------
+
+https://youtu.be/FT7anssHXUo
+
 Credits
 -------
 
